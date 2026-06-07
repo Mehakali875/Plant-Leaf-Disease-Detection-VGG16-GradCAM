@@ -20,12 +20,33 @@ The model is trained on a publicly available plant disease dataset and demonstra
 
 ## Dataset
 
-The project uses the Plant Village dataset available on Kaggle.
+This project utilizes the **New Plant Diseases Dataset (Augmented)** from Kaggle, a widely used benchmark dataset for plant disease classification and computer vision research in agriculture.
+
+### Dataset Source
 
 Dataset Link:
 https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
 
-The dataset contains thousands of labeled plant leaf images representing multiple healthy and diseased crop classes.
+### Dataset Description
+
+The dataset contains thousands of high-quality plant leaf images belonging to multiple crop species and disease categories. It includes both healthy and diseased leaf samples, making it suitable for multi-class image classification tasks.
+
+### Key Characteristics
+
+* Multiple plant species
+* Healthy and diseased leaf images
+* Multi-class classification problem
+* Augmented training images
+* Real-world agricultural disease identification use case
+
+### Data Preparation
+
+The dataset images were preprocessed using image resizing and normalization techniques. Data augmentation was applied through TensorFlow's `ImageDataGenerator` to improve model generalization and reduce overfitting.
+
+### Purpose
+
+The dataset was used to train and evaluate a VGG16 Transfer Learning model capable of automatically identifying plant diseases from leaf images while providing explainable predictions through Grad-CAM visualization.
+
 
 ---
 
