@@ -94,20 +94,25 @@ The trained model achieved strong classification performance on plant disease im
 
 ---
 
-## Installation
+## Development Environment
 
 ```bash
-pip install -r requirements.txt
+This project was developed and trained using Google Colab with TensorFlow and Keras. Google Colab's GPU environment was utilized to accelerate model training and improve model performance.
 ```
 
 ---
 
-## Running the Project
-
-Open the Jupyter Notebook:
+## How to Run
 
 ```bash
-jupyter notebook Plant_Disease_Detection.ipynb
+1. Download the Plant Village dataset from the Kaggle link provided in this repository.
+2. Upload the dataset to your Google Drive.
+3. Open the Plant_Disease_Detection.ipynb notebook in Google Colab.
+4. Update dataset paths if necessary.
+5. Run all notebook cells sequentially.
+6. View model training results, evaluation metrics, predictions, and Grad-CAM       visualizations.
+
+The notebook contains the complete workflow, including data preprocessing, model training, evaluation, and explainable AI visualization using Grad-CAM.
 ```
 
 Run all cells sequentially to train the model and generate predictions and Grad-CAM visualizations.
